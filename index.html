@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battaglia Navale dei Pirati</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenitore-gioco">
+    <header class="intestazione">
+      <h1 class="titolo-gioco">Battaglia Navale</h1>
+    </header>
+
+    <div class="pannello-informazioni">
+      <div class="scatola-statistica">
+        <span class="etichetta">Tentativi</span>
+        <span id="contatore-tentativi" class="valore">0</span>
+      </div>
+      <div class="scatola-statistica">
+        <span class="etichetta">Navi Rimaste</span>
+        <span id="navi-rimaste" class="valore">4</span>
+      </div>
+      <div class="scatola-statistica">
+        <span class="etichetta">Tempo</span>
+        <span id="cronometro" class="valore">00:00</span>
+      </div>
+    </div>
+
+    <div id="griglia-gioco" class="griglia"></div>
+
+    <div class="sezione-messaggio">
+      <p id="messaggio-stato" class="messaggio">Clicca la grigia per sparare alle navi!</p>
+    </div>
+
+    <div class="sezione-controlli">
+      <button id="bottone-ricomincia" class="bottone">GIOCA</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
